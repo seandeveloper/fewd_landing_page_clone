@@ -8,7 +8,6 @@ html {
 /*Background color for easy page setup
 so can see div box for sizing*/
 body, a {
-	background-color:lightgray;
 	text-decoration: none;
 }
 
@@ -38,6 +37,8 @@ logo class in the css*/
 	height: 4.2em;
 }
 
+
+/*POSITIONING AND STYLING OF LINKS*/
 .top-navigation .links {
 	float: right;
 	font-family: 'Roberto', sans-serif;
@@ -67,4 +68,34 @@ logo class in the css*/
 
 .top-navigation .links > li:hover {
 	color: #666;
+}
+
+/*BACKGROUND TITLE IMAGE - MASTHEAD SECTION*/
+
+.introduction {
+	background-image: url('../images/first-background.jpg');
+	height: 45.938rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	overflow: auto;
+}
+
+/*INTRODUCTION TEXT HEADINGS FONT SELECTION AND POSITIONING*/
+.introduction, 
+.introduction-heading, 
+.introduction-into {
+	font-family: 'Roberto', sans-serif;
+	color: #fff;
+	letter-spacing: 0.08em;
+	font-weight: 200;
+	-webkit-font-smoothing: antialiased;
+}
+
+.introduction > .content {
+	margin-top: 18rem;
+	text-align: center;
+	width: 790px;
+	margin-left: auto;
+	margin-right: auto;
 }
