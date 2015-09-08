@@ -1,6 +1,14 @@
-/*Background color for easy page setup*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Background color for easy page setup
+so can see div box for sizing*/
 body, a {
-	background-color: //lightgray;
+	background-color:lightgray;
 	text-decoration: none;
 }
 
@@ -8,34 +16,55 @@ div{
 	border: 1px solid chocolate;
 }
 
-section{
-	border: 1px solid orange;
+
+/*TOP NAVIGATION SECITION & LOGO*/
+
+.top-navigation {
+	background-color: #fff;
 }
 
-
-/*TOP HEADER NAVIGATION BAR AND LOGO*/
-
-.masthead {
-	text-align: center;
+.top-navigation > .content {
+	width: 790px;
+	height: 70px;
+	padding: 0px 15px;
+	margin: 0 auto;
 }
 
-.masthead {
-	width: 700px;
-	margin-right: auto;
-	margin-left: auto;
+/*why did we not have to use 
+.content first to access the 
+logo class in the css*/
+.logo {
+	margin-left: 0.875;
+	height: 4.2em;
 }
 
-.masthead > img {
-	height: auto;
-	width: 2em;
-	margin-left: -2em;
-	margin-right: 15em;
-	float: left;
-}
-
-.navbar-links > li {
+.top-navigation .links {
+	float: right;
+	font-family: 'Roberto', sans-serif;
+	color: #838994;
 	font-size: 1em;
-	margin-top: 1em;
-	margin-right: 9px;
+	margin-top: 1.6em;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+}
+
+.top-navigation .links > li {
 	display: inline-block;
+	margin-left: 16px;
+}
+
+.top-navigation .links > .active {
+	color: #4c5058;
+	font-weight: 500;
+}
+
+ /****************************/
+/* TOP NAVIAGION ANIMATIONS */
+
+.top-navigation .links > li {
+	transition: color 0.02;
+}
+
+.top-navigation .links > li:hover {
+	color: #666;
 }

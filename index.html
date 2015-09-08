@@ -3,32 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Karma</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="masthead">
-			<img src="images/Karma-Logo.png" alt="Karma">
-		<ul class="navbar-links">
-			<li>
-				<a href="">Meet Karma</a>
-			</li>
-			<li>
-				<a href="">How it Works</a>
-			</li>
-			<li>
-				<a href="">Store</a>
-			</li>
-			<li>
-				<a href="">Blog</a>
-			</li>
-			<li>
-				<a href="">Help</a>
-			</li>
-			<li>
-				<a href="">Login</a>
-			</li>
-		</ul>
-	</header>
+	<nav class="top-navigation">
+		<div class="content">
+			<ul class="links">
+				<li class="active">Meet Karma</li>
+				<li>How it Works</li>
+				<li>Store</li>
+				<li>Blog</li>
+				<li>Help</li>
+				<li>Login</li>
+			</ul>
+			<!--why did we not have to use .content first to access the logo class in the css*/-->
+			<img class="logo" src="images/karma-logo.png" alt="Karma">
+		</div>
+	</nav>
 </body>
 </html>
