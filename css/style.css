@@ -1,0 +1,9 @@
+/*Background color for easy page setup*/
+body {
+	background-color: lightgray;
+}
+
+div{
+	border: 1px solid chocolate;
+}
+
