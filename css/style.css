@@ -1,9 +1,41 @@
 /*Background color for easy page setup*/
-body {
-	background-color: lightgray;
+body, a {
+	background-color: //lightgray;
+	text-decoration: none;
 }
 
 div{
 	border: 1px solid chocolate;
 }
 
+section{
+	border: 1px solid orange;
+}
+
+
+/*TOP HEADER NAVIGATION BAR AND LOGO*/
+
+.masthead {
+	text-align: center;
+}
+
+.masthead {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.masthead > img {
+	height: auto;
+	width: 2em;
+	margin-left: -2em;
+	margin-right: 15em;
+	float: left;
+}
+
+.navbar-links > li {
+	font-size: 1em;
+	margin-top: 1em;
+	margin-right: 9px;
+	display: inline-block;
+}
