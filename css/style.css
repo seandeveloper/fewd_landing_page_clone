@@ -19,13 +19,15 @@ div{
 /*TOP NAVIGATION SECITION & LOGO*/
 
 .top-navigation {
+	position: fixed;
+	width: 100%;
 	background-color: #fff;
 }
 
 .top-navigation > .content {
 	width: 790px;
 	height: 70px;
-	padding: 0px 15px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -33,8 +35,9 @@ div{
 .content first to access the 
 logo class in the css*/
 .logo {
-	margin-left: 0.875;
-	height: 4.2em;
+	margin-top: 0.67rem;
+	margin-left: 0.02rem;
+	height: 3.0rem;
 }
 
 
@@ -49,7 +52,7 @@ logo class in the css*/
 	-webkit-font-smoothing: antialiased;
 }
 
-.top-navigation .links > li {
+.links li {
 	display: inline-block;
 	margin-left: 16px;
 }
@@ -60,10 +63,10 @@ logo class in the css*/
 }
 
  /****************************/
-/* TOP NAVIAGION ANIMATIONS */
+/* TOP NAVIGATION ANIMATIONS */
 
 .top-navigation .links > li {
-	transition: color 0.02;
+	transition: color 0.2ms;
 }
 
 .top-navigation .links > li:hover {
