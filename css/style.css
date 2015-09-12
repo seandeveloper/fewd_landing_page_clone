@@ -7,9 +7,10 @@ html {
 
 /*Background color for easy page setup
 so can see div box for sizing*/
-body a {
+body, body a {
     font-family: 'Roberto', sans-serif;
 	text-decoration: none;
+    -webkit-font-smoothing: antialiased;
 }
 
 div{
@@ -49,11 +50,10 @@ logo class in the css?*/
 .top-navigation .links {
 	float: right;
 	color: #838994;
-	font-size: 1em;
+	font-size: 1.08em;
 	margin-top: 1.6em;
 	letter-spacing: 0.03em;
-    font-weight: 700;
-	-webkit-font-smoothing: antialiased;
+    font-weight: 300;
 }
 
 .links li {
@@ -63,12 +63,11 @@ logo class in the css?*/
 
 .top-navigation .links > .active {
 	color: #4c5058;
-	font-weight: 700;
+	font-weight: 600;
 }
 
  /*****************************/
 /* TOP NAVIGATION ANIMATIONS */
-
 .links > li {
 	transition: color 0.2ms;
     /*Q. Why cursor shows hand when I have selected pointer?*/
@@ -76,34 +75,58 @@ logo class in the css?*/
 }
 
 .top-navigation .links > li:hover {
-	color: #666;
+	color: #444;
 }
 
 /*BACKGROUND TITLE IMAGE - INTRODUCTION IMAGE*/
-
 .introduction {
 	background-image: url('../images/first-background.jpg');
-	height: 47em;
+	height: 46em;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center bottom;
-	overflow: auto;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 /*INTRODUCTION TEXT HEADINGS FONT SELECTION AND POSITIONING*/
-.introduction, 
-.introduction-heading, 
-.introduction-into {
-	color: #fff;
-	letter-spacing: 0.08em;
-	font-weight: 200;
-	-webkit-font-smoothing: antialiased;
+.introduction h1 {
+    font-size: 3.125rem;
+    margin-top: 17.5rem;
+    font-weight: 100;
 }
 
-.introduction > .content {
-	margin-top: 18em;
-	text-align: center;
-	width: 49em;
-	margin-left: auto;
-	margin-right: auto;
+.introduction h3 {
+    font-size: 1.25rem;
+    margin-top: 1.563rem;
+    font-weight: 100;
+}
+
+.introduction, 
+.introduction-heading h1,
+.introduction-into h3 {
+    text-align: center;
+	color: #fff;
+	letter-spacing: 0.1em;
+}
+
+/*BIG BUTTON STYLING (POSITION INHERITED FROM CLASS .CONTENT)*/
+.big-button {
+    margin-top: 0.5rem;
+    background-color: #F15B2A;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+    width: 155px;
+    font-size: 1.125rem;
+}
+
+/*BIG BUTTON ANIMATION*/
+.content .big-button {
+    transition: background-color .2ms;
+}
+.content .big-button:hover {
+    background-color: rgb(237, 71, 21);
 }
