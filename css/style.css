@@ -16,7 +16,7 @@ div{
 }
 
 
-/*TOP NAVIGATION SECTION & LOGO*/
+/*TOP NAVIGATION CONTENT SECTION & LOGO*/
 
 /*Top nav-bar always visible with position fixed
 and scrolls with user*/
@@ -26,6 +26,7 @@ and scrolls with user*/
 	background-color: #fff;
 }
 
+/*Q: Why us > and not just .content to affect elements*/
 .top-navigation .content {
 	width: 790px;
 	height: 70px;
@@ -33,13 +34,13 @@ and scrolls with user*/
 	margin: 0 auto;
 }
 
-/*why did we not have to use 
+/*Q. Why did we not have to use
 .content first to access the 
-logo class in the css*/
+logo class in the css?*/
 .logo {
-	margin-top: 0.67rem;
-	margin-left: 0.02rem;
-	height: 3.0rem;
+	margin-top: 0.67em;
+	margin-left: 0.02em;
+	height: 3.0em;
 }
 
 
@@ -56,7 +57,7 @@ logo class in the css*/
 
 .links li {
 	display: inline-block;
-	margin-left: 16px;
+	margin-left: 2.25em;
 }
 
 .top-navigation .links > .active {
@@ -64,24 +65,24 @@ logo class in the css*/
 	font-weight: 500;
 }
 
- /****************************/
+ /*****************************/
 /* TOP NAVIGATION ANIMATIONS */
 
 .links > li {
 	transition: color 0.2ms;
+    /*Q. Why cursor shows hand when I have selected pointer?*/
 	cursor: pointer;
-	cursor: hand;
 }
 
 .top-navigation .links > li:hover {
 	color: #666;
 }
 
-/*BACKGROUND TITLE IMAGE - MASTHEAD SECTION*/
+/*BACKGROUND TITLE IMAGE - INTRODUCTION IMAGE*/
 
 .introduction {
 	background-image: url('../images/first-background.jpg');
-	height: 45.938rem;
+	height: 47em;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center bottom;
@@ -100,9 +101,9 @@ logo class in the css*/
 }
 
 .introduction > .content {
-	margin-top: 18rem;
+	margin-top: 18em;
 	text-align: center;
-	width: 790px;
+	width: 49em;
 	margin-left: auto;
 	margin-right: auto;
 }
