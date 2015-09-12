@@ -16,15 +16,17 @@ div{
 }
 
 
-/*TOP NAVIGATION SECITION & LOGO*/
+/*TOP NAVIGATION SECTION & LOGO*/
 
+/*Top nav-bar always visible with position fixed
+and scrolls with user*/
 .top-navigation {
 	position: fixed;
 	width: 100%;
 	background-color: #fff;
 }
 
-.top-navigation > .content {
+.top-navigation .content {
 	width: 790px;
 	height: 70px;
 	padding: 0 15px;
@@ -65,8 +67,10 @@ logo class in the css*/
  /****************************/
 /* TOP NAVIGATION ANIMATIONS */
 
-.top-navigation .links > li {
+.links > li {
 	transition: color 0.2ms;
+	cursor: pointer;
+	cursor: hand;
 }
 
 .top-navigation .links > li:hover {
