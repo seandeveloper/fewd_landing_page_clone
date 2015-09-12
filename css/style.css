@@ -7,7 +7,8 @@ html {
 
 /*Background color for easy page setup
 so can see div box for sizing*/
-body, a {
+body a {
+    font-family: 'Roberto', sans-serif;
 	text-decoration: none;
 }
 
@@ -47,7 +48,6 @@ logo class in the css?*/
 /*POSITIONING AND STYLING OF LINKS*/
 .top-navigation .links {
 	float: right;
-	font-family: 'Roberto', sans-serif;
 	color: #838994;
 	font-size: 1em;
 	margin-top: 1.6em;
@@ -94,7 +94,6 @@ logo class in the css?*/
 .introduction, 
 .introduction-heading, 
 .introduction-into {
-	font-family: 'Roberto', sans-serif;
 	color: #fff;
 	letter-spacing: 0.08em;
 	font-weight: 200;
