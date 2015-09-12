@@ -52,6 +52,7 @@ logo class in the css?*/
 	font-size: 1em;
 	margin-top: 1.6em;
 	letter-spacing: 0.03em;
+    font-weight: 700;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -62,7 +63,7 @@ logo class in the css?*/
 
 .top-navigation .links > .active {
 	color: #4c5058;
-	font-weight: 500;
+	font-weight: 700;
 }
 
  /*****************************/
