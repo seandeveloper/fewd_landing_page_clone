@@ -14,7 +14,8 @@ body, body a{
     text-align: center;
 }
 
-ol ul {
+/*TODO-me QUESTION: Why does text decoration not work further down the document*/
+.content ol ul li {
     text-decoration: none;
 }
 
@@ -47,6 +48,7 @@ logo class in the css?*/
 .logo {
 	margin-top: 0.67em;
 	height: 3.0em;
+    /*TODO-me TASK: Logo should be further left in the nav-bar content div*/
 }
 
 .top-navigation .links {
@@ -150,7 +152,8 @@ logo class in the css?*/
 
 .content .devices > li {
     display: inline-block;
-    margin: 2rem;
+    vertical-align: top;
+    padding-right: 4rem;
 }
 
 .cases h2 {
@@ -168,3 +171,26 @@ logo class in the css?*/
 }
 
 /*FOOTER SECTION*/
+
+.footer {
+    margin: 7rem 0;
+    width: 100%;
+}
+
+.content .social-links {
+    margin: 2em auto;
+    list-style-type: none;
+    width: 30%;
+
+}
+
+.content .social-links li {
+    display: inline-block;
+    vertical-align: top;
+    padding-right:2.3rem;
+}
+
+#copy-write {
+    color: #83899A;
+    font-weight: 100;
+}
