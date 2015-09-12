@@ -7,10 +7,15 @@ html {
 
 /*Background color for easy page setup
 so can see div box for sizing*/
-body, body a {
+body, body a{
     font-family: 'Roberto', sans-serif;
 	text-decoration: none;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+ol ul {
+    text-decoration: none;
 }
 
 div{
@@ -26,6 +31,7 @@ and scrolls with user*/
 	position: fixed;
 	width: 100%;
 	background-color: #fff;
+    z-index: 9999;
 }
 
 /*Q: Why us > and not just .content to affect elements*/
@@ -40,44 +46,42 @@ and scrolls with user*/
 logo class in the css?*/
 .logo {
 	margin-top: 0.67em;
-	margin-left: 0.02em;
 	height: 3.0em;
 }
 
-
-/*POSITIONING AND STYLING OF LINKS*/
 .top-navigation .links {
 	float: right;
 	color: #838994;
-	font-size: 1.08em;
-	margin-top: 1.6em;
+	font-size: 1.04em;
+	margin-top: 1.7em;
 	letter-spacing: 0.03em;
     font-weight: 300;
 }
 
 .links li {
 	display: inline-block;
-	margin-left: 2.25em;
+    margin-left: 1.5rem;
 }
 
 .top-navigation .links > .active {
 	color: #4c5058;
 	font-weight: 600;
+    cursor: pointer;
+    /*Q. Why cursor shows hand when I have selected pointer?*/
 }
 
  /*****************************/
 /* TOP NAVIGATION ANIMATIONS */
 .links > li {
 	transition: color 0.2ms;
-    /*Q. Why cursor shows hand when I have selected pointer?*/
-	cursor: pointer;
 }
 
 .top-navigation .links > li:hover {
 	color: #444;
 }
 
-/*BACKGROUND TITLE IMAGE - INTRODUCTION IMAGE*/
+/*INTRODUCTION SECTION*/
+/*background title image*/
 .introduction {
 	background-image: url('../images/first-background.jpg');
 	height: 46em;
@@ -88,7 +92,15 @@ logo class in the css?*/
     overflow-x: auto;
 }
 
-/*INTRODUCTION TEXT HEADINGS FONT SELECTION AND POSITIONING*/
+/*introduction text*/
+.introduction,
+.introduction-heading h1,
+.introduction-into h3 {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+
 .introduction h1 {
     font-size: 3.125rem;
     margin-top: 17.5rem;
@@ -101,15 +113,7 @@ logo class in the css?*/
     font-weight: 100;
 }
 
-.introduction, 
-.introduction-heading h1,
-.introduction-into h3 {
-    text-align: center;
-	color: #fff;
-	letter-spacing: 0.1em;
-}
-
-/*BIG BUTTON STYLING (POSITION INHERITED FROM CLASS .CONTENT)*/
+/*big button styling and positioning*/
 .big-button {
     margin-top: 0.5rem;
     background-color: #F15B2A;
@@ -122,7 +126,7 @@ logo class in the css?*/
     font-size: 1.125rem;
 }
 
-/*BIG BUTTON ANIMATION*/
+/*big button animation*/
 .content .big-button {
     transition: background-color .2ms;
 }
@@ -130,3 +134,37 @@ logo class in the css?*/
     background-color: rgb(237, 71, 21);
 }
 
+/*CASES SECTION*/
+
+/*TODO-me PROBLEM: cases images (ul) not centered correctly?*/
+
+.cases {
+    margin: 3rem;
+    box-sizing: border-box;
+    /*TODO-me QUESTION: is the border-box necessary?*/
+}
+.cases .content .devices {
+    list-style-type: none;
+    text-align: center;
+}
+
+.content .devices > li {
+    display: inline-block;
+    margin: 2rem;
+}
+
+.cases h2 {
+    margin: 4rem 0px;
+    font-size: 2.7rem;
+    font-family: 'Roberto', sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 100;
+}
+
+.devices h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+/*FOOTER SECTION*/
