@@ -19,9 +19,9 @@ body, body a{
     text-decoration: none;
 }
 
-div{
-	border: 1px solid chocolate;
-}
+/*div{*/
+	/*border: 1px solid chocolate;*/
+/*}*/
 
 
 /*TOP NAVIGATION CONTENT SECTION & LOGO*/
@@ -37,7 +37,7 @@ and scrolls with user*/
 
 /*Q: Why us > and not just .content to affect elements*/
 .top-navigation .content {
-	width: 790px;
+	width: 60%;
 	height: 70px;
 	margin: 0 auto;
 }
